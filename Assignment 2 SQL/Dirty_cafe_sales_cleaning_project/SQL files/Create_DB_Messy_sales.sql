@@ -21,3 +21,4 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (`Transaction ID`, `Item`, `Quantity`, `Price Per Unit`,
  `Total Spent`, `Payment Method`, `Location`, `Transaction Date`);
+
