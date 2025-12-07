@@ -21,6 +21,8 @@ WHERE c.Item IS NOT NULL;
 
 SET SQL_SAFE_UPDATES = 1;
 -- Calculations 
+
+
 USE cafe_sales;
 
 
@@ -36,3 +38,4 @@ UPDATE clean_cafe_sales
 SET Price_Per_Unit = Total_Spent / Quantity;
 
 SET SQL_SAFE_UPDATES = 1;
+
