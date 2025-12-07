@@ -20,3 +20,19 @@ SET c.Price_Per_Unit = r.Price_Per_Unit
 WHERE c.Item IS NOT NULL;
 
 SET SQL_SAFE_UPDATES = 1;
+-- Calculations 
+USE cafe_sales;
+
+
+SET SQL_SAFE_UPDATES = 0;
+
+UPDATE clean_cafe_sales
+SET Total_Spent = Price_Per_Unit * Quantity;
+
+UPDATE clean_cafe_sales
+SET Quantity = Total_Spent / Price_Per_Unit;
+
+UPDATE clean_cafe_sales
+SET Price_Per_Unit = Total_Spent / Quantity;
+
+SET SQL_SAFE_UPDATES = 1;
